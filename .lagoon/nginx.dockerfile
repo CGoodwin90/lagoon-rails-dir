@@ -5,8 +5,7 @@ FROM uselagoon/nginx:latest
 
 COPY --from=cli /app /app
 
-COPY lagoon/nginx/nginx.conf /etc/nginx/conf.d/app.conf
-
+COPY .lagoon/nginx.conf /etc/nginx/conf.d/app.conf
 
 EXPOSE 8080
 
